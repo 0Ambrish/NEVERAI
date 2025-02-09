@@ -1,0 +1,93 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://source.unsplash.com/1600x900/?technology,ai'); /* Open-source background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+
+/* Search Bar */
+.search-container {
+  margin: 20px;
+}
+
+#searchBar {
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+#searchBar::placeholder {
+  color: #ddd;
+}
+
+/* AI Models List */
+.ai-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.ai-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.ai-card:hover {
+  transform: scale(1.05);
+}
+
+.ai-card h3 {
+  color: #f39c12;
+  font-size: 1.8rem;
+}
+
+.ai-card p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.ai-card a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+}
+
+.ai-card a:hover {
+  background-color: #f39c12;
+  color: black;
+}
